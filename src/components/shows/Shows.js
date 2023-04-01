@@ -10,7 +10,7 @@ const Shows = () => {
    
   return (
     <div className='d-grid parent'>
-        {shows && shows.data.map((movie)=><Card movie={movie.show}/>)}
+        {shows && shows.data.map((movie)=><Card movie={movie.show} key={movie.show.id}/>)}
     </div>
   )
 }
